@@ -1,3 +1,4 @@
-print(
-    "Life is Toooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo Short"
-)
+import os
+import sys
+
+print("hi")
