@@ -18,6 +18,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# from ninja import NinjaAPI
+#
+# from tabom.services.like_service import do_like
+
+# api = NinjaAPI()
+#
+# @api.get("/like")
+# def like(request, article_id: int, user_id: int) -> None:
+#     do_like(user_id, article_id)
+#     return None
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # path("api/", api.urls),
 ]
