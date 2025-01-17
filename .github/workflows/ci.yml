@@ -61,6 +61,9 @@ jobs:
         run: |
           poetry run mypy .
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
       - name: Test python project
         run: |
           poetry run python manage.py test
