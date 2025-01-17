@@ -45,11 +45,14 @@ jobs:
         run: |
           poetry install --no-root
 
+        # black은 기능의 전혀 변화 없이 포매팅만 하는것
         # --check 수정하지 않고 검사만 가능
       - name: Run black
         run: |
           poetry run black . --check 
 
+        # isort은 기능의 전혀 변화 없이 import 정렬과 import 그룹을 나눠 준다.
+        # 그룹 이란것은 내장 라이브러리, 서드파티, 직접 만든 모듈들
       - name: Run isort
         run: |
           poetry run isort . --check --diff
